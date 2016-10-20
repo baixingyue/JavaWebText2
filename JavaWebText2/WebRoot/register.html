@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>用户注册</title>
+<script>
+	function checkName() {
+		var username = f.username.value;
+		if (username == "") {
+			alert("请输入用户名");
+		} else {
+			window.open(" checkName.jsp?username=" + encodeURI(username), "check", "menubar=no,height-300,width=400,left=300,top=80")
+		}
+	}
+	function check() {
+		if (f.username.value == "") {
+			alert("用户名不能为空");
+			return false;
+		} else if (f.password.value == "" || f.password.value != f.password1.value) {
+			alert("密码为空或两次密码不一致！");
+			return false;
+		} else {
+			return true;
+		}
+	}
+</script>
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+</head>
+
+
+<body>
+	<center>
+		<h1>用户注册</h1>
+		<hr>
+		<form name="f" method="post" action="register.jsp"
+			onSubmit="return check()">
+			<table>
+				<tr>
+					<td align="center">用户名
+					<td><input type="text" name="username">
+					<td><a href="javaScript:checkName()">检查用户名是否可用</a>
+				<tr>
+					<td align="center">密码
+					<td><input type="password" name="password">
+					<td>必须是六位
+				<tr>
+					<td align="center">密码确认
+					<td><input type="password" name="password1">
+					<td>两次密码必须一致
+				<tr>
+					<td align="center">姓名
+					<td><input type="text" name="truename">
+					<td>在五位以内
+				<tr>
+					<td align="center">性别
+					<td><input type="text" name="sex">
+					<td>必须填male或者female
+				<tr>
+					<td align="center">电话
+					<td><input type="text" name="tele">
+					<td>必须在20位以内
+			</table>
+			<input type="submit" value="注册"> <input type="reset"
+				value="重置">
+		</form>
+	</center>
+</body>
+</html>
