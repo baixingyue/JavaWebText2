@@ -11,16 +11,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <title>iCart 在线购物</title>
 </head>
 <body>
+	<%
+		String loginUser = "";
+		if (session.getAttribute("loginUser") != null) {
+			loginUser = session.getAttribute("loginUser").toString();
+	
+		} else {
+
+			response.sendRedirect("noLogin.jsp");
+		}
+	%>
 <div class="menu">
 <ul>
 <li style="width:0px;"><a></a></li>
-<li class="active"><a href="index.html" class="home">主页</a></li>
+<li class="active"><a href="produceIndex.jsp" class="home">主页</a></li>
 <li><a href="browse_product.jsp" class="wishlist">查看全部商品</a></li>
-<li><a href="wishlist.html" class="wishlist">心愿列表 (0)</a></li>
+<li><a href="wishlist.jsp" class="wishlist">心愿列表 (0)</a></li>
 <li><a href="account.html" class="account">我的账户</a></li>
-<li><a href="cart.html" class="cart">购物车</a></li>
+<li><a href="cart.jsp" class="cart">购物车</a></li>
 <li><a class="checkout">Checkout</a></li>
-<li style="float:right;"><a href="loginPro.jsp" class="login">注销账户</a></li>
+<li style="float:right;"><a href="wonderfulLogin.jsp" class="login">注销账户</a></li>
 <li style="float:right;"><a href="register.html" class="register">注册新账户</a></li>
 </ul>
 </div>

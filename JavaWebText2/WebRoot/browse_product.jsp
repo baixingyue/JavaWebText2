@@ -3,9 +3,19 @@
 <jsp:useBean class="javabean.userConn" id="jdbc" />
 <html>
 <head>
-<title>用户信息列表</title>
+<title>商品信息列表</title>
 </head>
 <body>
+	<%
+		String loginUser = "";
+		if (session.getAttribute("loginUser") != null) {
+			loginUser = session.getAttribute("loginUser").toString();
+		
+		} else {
+
+			response.sendRedirect("noLogin.jsp");
+		}
+	%>
 	<center>
 		<h2>商品信息表</h2>
 		<table border bordercolor="blue">

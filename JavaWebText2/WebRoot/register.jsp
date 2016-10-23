@@ -6,6 +6,7 @@
 <title>注册信息处理</title>
 </head>
 <body>
+
 	<%
 		//设置成UTF-8编码以防乱码
 		request.setCharacterEncoding("UTF-8");
@@ -37,7 +38,7 @@
 	<center>
 		<h2>注册成功！</h2>
 		<a href="userList.jsp">查看您的注册信息</a>
-		<a href="login.jsp">返回登录页</a>
+		<a href="wonderfulLogin.jsp">返回登录页</a>
 	</center>
 	<%
 		} else {

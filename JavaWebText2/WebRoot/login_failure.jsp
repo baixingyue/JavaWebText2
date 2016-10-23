@@ -35,7 +35,7 @@
 		  %>
 		<font color="red"><%=loginUser%></font>,登录失败！
 		</div>
-		 <a href="loginPro.jsp">返回登录</a>   
+		 <a href="wonderfulLogin.jsp">返回登录</a>   
 		 <div> <a href="register.html">注册</a>  </div>
 		
 	</div>

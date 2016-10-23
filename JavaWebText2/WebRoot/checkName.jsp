@@ -6,6 +6,7 @@
 <title>检查用户名是否存在</title>
 </head>
 <body>
+
 <% String username=request.getParameter("username");
    String sql="select * from t_user where user_username='"+username+"'";
    ResultSet rs=jdbc.executeQuery(sql);

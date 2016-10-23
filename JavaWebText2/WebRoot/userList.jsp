@@ -6,6 +6,16 @@
 <title>用户信息列表</title>
 </head>
 <body>
+	<%
+		String loginUser = "";
+		if (session.getAttribute("loginUser") != null) {
+			loginUser = session.getAttribute("loginUser").toString();
+	
+		} else {
+
+			response.sendRedirect("noLogin.jsp");
+		}
+	%>
 	<center>
 		<h2>用户信息列表</h2>
 		<table border bordercolor="blue">

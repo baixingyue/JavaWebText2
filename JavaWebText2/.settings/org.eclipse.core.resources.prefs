@@ -1,10 +1,16 @@
 eclipse.preferences.version=1
 encoding//WebRoot/adminFunction.jsp=UTF-8
+encoding//WebRoot/allUserList.jsp=UTF-8
 encoding//WebRoot/browse_product.jsp=UTF-8
+encoding//WebRoot/cart.jsp=UTF-8
 encoding//WebRoot/checkName.jsp=UTF-8
+encoding//WebRoot/del.jsp=UTF-8
 encoding//WebRoot/noLogin.jsp=UTF-8
 encoding//WebRoot/produceIndex.jsp=UTF-8
 encoding//WebRoot/register.jsp=UTF-8
 encoding//WebRoot/test/testConn.jsp=UTF-8
 encoding//WebRoot/test/testjdbc.jsp=UTF-8
+encoding//WebRoot/update.jsp=UTF-8
 encoding//WebRoot/userList.jsp=UTF-8
+encoding//WebRoot/wishlist.jsp=UTF-8
+encoding//WebRoot/wonderfulLogin.jsp=UTF-8
