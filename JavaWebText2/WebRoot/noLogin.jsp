@@ -25,6 +25,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
    <%response.setHeader("Refresh", "5;URL=browse_product.jsp"); %>
     <div>您还未登录，请您先登录！</div>
-   <a href="login.jsp">返回登录</a> 
+   <a href="wonderfulLogin.jsp">返回登录</a> 
   </body>
 </html>

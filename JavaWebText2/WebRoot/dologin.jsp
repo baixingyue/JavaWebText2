@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*"
-	contentType="text/html; charset=utf-8" import="java.sql.*"%>
+	contentType="text/html; charset=utf-8" import="java.sql.*" %>
 
 <%
 	request.setCharacterEncoding("utf-8");
