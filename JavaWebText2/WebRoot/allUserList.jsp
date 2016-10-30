@@ -10,14 +10,14 @@
 		String loginUser = "";
 		if (session.getAttribute("loginUser") != null) {
 			loginUser = session.getAttribute("loginUser").toString();
-	
+			
 		} else {
 
 			response.sendRedirect("noLogin.jsp");
 		}
 	%>
 	<center>
-		<h2>用户信息列表</h2>
+		<h2>用户信息表</h2>
 		<table border bordercolor="blue">
 			<th>编号
 			<th>用户名
@@ -28,7 +28,7 @@
 			</tr>
 			<%
 				//获取表单信息
-				String sql = "select user_id,user_username,password,user_name,user_sex,user_tele from t_user where user_username='abc' ;";
+				String sql = "select user_id,user_username,password,user_name,user_sex,user_tele from t_user ;";
 				ResultSet rs = jdbc.executeQuery(sql);
 				while (rs.next()) {
 			%>
@@ -45,7 +45,6 @@
 				}
 				jdbc.close();
 			%>
-
 		</table>
 	</center>
 </body>

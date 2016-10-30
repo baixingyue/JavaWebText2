@@ -13,7 +13,7 @@
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 
-	//如果用户和密码都正确
+	//如果用户和密码都如果用户名密码不为空
 
 	if (session.getAttribute("loginUser") != null) {
 		//如果用户和密码都等于admin,则登录成功
